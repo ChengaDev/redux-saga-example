@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import userSelectors from '../selectors/userSelectors';
 
 function App() {
-  const users = useSelector(userSelectors.users);
+  const users = useSelector(userSelectors.usersWithOrders);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(loadUsers());
@@ -13,7 +13,12 @@ function App() {
     <div>
       {users.length > 0 &&
         users.map((user) => {
-          return <div key={user.id}>{user.name}</div>;
+          return (
+            <div key={user.id}>
+              <div>name: {user.name}</div>
+              <div>orders count: {user.orders.length}</div>
+            </div>
+          );
         })}
     </div>
   );

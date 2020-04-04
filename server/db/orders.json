@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "userId": 1,
+    "product": "iPhone 10",
+    "quantity": 2
+  },
+  {
+    "id": 2,
+    "userId": 3,
+    "product": "Redmi Note 8",
+    "quantity": 1
+  },
+  {
+    "id": 5,
+    "userId": 2,
+    "product": "Nexus 6",
+    "quantity": 1
+  },
+  {
+    "id": 5,
+    "userId": 3,
+    "product": "Type C Charger",
+    "quantity": 1
+  }
+]
