@@ -9,29 +9,33 @@ app.use(express.json());
 app.use(cors());
 
 app.get('/users', (req, res) => {
-  const response = users;
-  res
-    .header('Content-Type', 'application/json')
-    .status(200)
-    .send(response)
-    .end();
+  setTimeout(() => {
+    const response = users;
+    res
+      .header('Content-Type', 'application/json')
+      .status(200)
+      .send(response)
+      .end();
+  }, 1500);
 });
 
 app.get('/orders', (req, res) => {
-  let userId = req.query.userId;
+  setTimeout(() => {
+    let userId = req.query.userId;
 
-  let response = null;
-  if (userId) {
-    response = orders.filter((order) => order.userId.toString() === userId);
-  } else {
-    response = orders;
-  }
+    let response = null;
+    if (userId) {
+      response = orders.filter((order) => order.userId.toString() === userId);
+    } else {
+      response = orders;
+    }
 
-  res
-    .header('Content-Type', 'application/json')
-    .status(200)
-    .send(response)
-    .end();
+    res
+      .header('Content-Type', 'application/json')
+      .status(200)
+      .send(response)
+      .end();
+  }, 1000);
 });
 
 app.listen(port, () => {

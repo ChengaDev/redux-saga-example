@@ -9,7 +9,7 @@ const usersWithOrders = createSelector(
   (users, orders) => {
     return users.map((user) => {
       const userOrders = orders.filter((order) => order.userId === user.id);
-      return { ...user, orders: userOrders ? userOrders : [] };
+      return { ...user, orders: userOrders ? userOrders : null };
     });
   }
 );
