@@ -1,13 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
+import OrdersList from './OrdersList';
 
 function User({ id, name, orders }) {
   const renderOrders = () => {
-    return <div>orders count: {orders.length}</div>;
+    return (
+      <React.Fragment>
+        <OrdersListTitle>Ordered products:</OrdersListTitle>
+        <OrdersList orders={orders} />
+      </React.Fragment>
+    );
   };
 
   const renderEmptyCase = () => {
-    return <div>User have no orders</div>;
+    return <EmptyCaseText>User have no orders</EmptyCaseText>;
   };
 
   const renderOrdersSection = () => {
@@ -40,11 +46,21 @@ const UserWrapper = styled.div`
 
 const Username = styled.div`
   font-weight: bold;
-  text-decoration: underline;
 `;
 
 const OrdersSection = styled.div`
   margin-top: 20px;
+`;
+
+const EmptyCaseText = styled.div`
+  color: red;
+  font-weight: bold;
+`;
+
+const OrdersListTitle = styled.div`
+  color: orange;
+  margin-bottom: 10px;
+  font-weight: bold;
 `;
 
 export default User;
