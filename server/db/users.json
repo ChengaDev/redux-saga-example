@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Chen Gazit",
+    "city": "Herzliya"
+  },
+  {
+    "id": 2,
+    "name": "Atar Bajayo",
+    "city": "Herzliya"
+  },
+  {
+    "id": 3,
+    "name": "Orly Gazit",
+    "city": "Rishon Lezion"
+  },
+  {
+    "id": 4,
+    "name": "Rami Gazit",
+    "city": "Rishon Lezion"
+  },
+  {
+    "id": 5,
+    "name": "Michael Jordan",
+    "city": "Washington"
+  },
+  {
+    "id": 6,
+    "name": "Lebron James",
+    "city": "Los Angeles"
+  }
+]
