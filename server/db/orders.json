@@ -8,19 +8,37 @@
   {
     "id": 2,
     "userId": 3,
+    "product": "Black Redmi Note 8 case",
+    "quantity": 1
+  },
+  {
+    "id": 2,
+    "userId": 3,
     "product": "Redmi Note 8",
     "quantity": 1
   },
   {
     "id": 5,
-    "userId": 2,
+    "userId": 4,
     "product": "Nexus 6",
     "quantity": 1
   },
   {
-    "id": 5,
+    "id": 6,
     "userId": 3,
     "product": "Type C Charger",
     "quantity": 1
+  },
+  {
+    "id": 6,
+    "userId": 5,
+    "product": "Type C Charger",
+    "quantity": 1
+  },
+  {
+    "id": 7,
+    "userId": 1,
+    "product": "1 Year iPhone insurance",
+    "quantity": 2
   }
 ]
